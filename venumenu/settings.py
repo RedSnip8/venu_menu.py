@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'venumenu.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'btredb',
+        'NAME': 'venumenudb',
         'USER': 'frank',
         'PASSWORD': 'Jur456assic!',
         'HOST': 'localhost',
@@ -127,7 +127,7 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'btre/static')
+    os.path.join(BASE_DIR, 'venumenu/static')
 ]
 
 # Media Folder Settings
@@ -138,3 +138,5 @@ MEDIA_URL = '/media/'
 MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
+
+GOOGLE_MAPS_API_KEY = os.environ.get('GOOGLE_MAPS_API_KEY')
