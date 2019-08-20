@@ -32,10 +32,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'favorites.app.FavoritesConfig',
-    'menus.app.MenusConfig',
-    'products.app.ProductsConfig',
-    'stands.app.StandsConfig',
+    'favorites.apps.FavoritesConfig',
+    'menus.apps.MenusConfig',
+    'products.apps.ProductsConfig',
+    'stands.apps.StandsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
